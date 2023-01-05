@@ -46,5 +46,4 @@ group "default" {
 target "base" {
     inherits   = ["_common"]
     dockerfile = "Base.Dockerfile"
-    tags       = ["${REGISTRY}/${REPO}/base:latest"]
 }
