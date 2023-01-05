@@ -8,6 +8,9 @@ on:  # yamllint disable-line rule:truthy
       - 'v[0-9]*'
   pull_request:
 
+env:
+  REPO_SLUG: "navisidhu/devcontainers"
+
 jobs:
   release:
     name: Create Release
