@@ -16,7 +16,7 @@ variable "REPO_SLUG" {
 #------------------------------------------------------------------
 
 target "_common" {
-  context = "build"
+  context = "images"
   labels = {
     "org.opencontainers.image.authors" = "Navdeep Sidhu",
     "org.opencontainers.image.vendor"  = "Navdeep Sidhu",
