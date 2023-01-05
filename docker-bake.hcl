@@ -48,7 +48,7 @@ group "default" {
 }
 
 target "base" {
-  dockerfile = "images/Base.Dockerfile"
+  dockerfile = "Base.Dockerfile"
   inherits   = ["_common"]
   tags       = ["${REPO_SLUG}/base:latest"]
 }
