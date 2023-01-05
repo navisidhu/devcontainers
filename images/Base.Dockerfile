@@ -1,7 +1,7 @@
 
 # Base Ubuntu
 #------------------------------------------------------------------------------
-FROM reg.emt.local/docker/library/ubuntu:focal-20221019
+FROM ubuntu:focal-20221019
 
 ARG DEBIAN_FRONTEND=noninteractive
 
