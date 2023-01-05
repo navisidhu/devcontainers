@@ -49,5 +49,8 @@ jobs:
       - name: Build Only
         uses: docker/bake-action@v2
         with:
+          files: |
+            ./docker-bake.hcl
+            ${{ steps.meta.outputs.bake-file }}
           set: |
             *.output=type=image,push=${{ github.event.inputs.dry-run != 'true' }}
