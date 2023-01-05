@@ -8,7 +8,7 @@ variable "GITHUB_REF" {
 }
 
 variable "REPO_SLUG" {
-  default = "navisidhu"
+  default = "navisidhu/devcontainer"
 }
 
 #------------------------------------------------------------------
@@ -50,5 +50,5 @@ group "default" {
 target "base" {
   dockerfile = "Base.Dockerfile"
   inherits   = ["_common"]
-  tags       = ["${REPO_SLUG}/base:latest"]
+  tags       = ["${REPO_SLUG}-base:latest"]
 }

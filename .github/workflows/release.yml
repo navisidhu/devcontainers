@@ -9,7 +9,7 @@ on:  # yamllint disable-line rule:truthy
   pull_request:
 
 env:
-  REPO_SLUG: "navisidhu"
+  REPO_SLUG: "navisidhu/devcontainer"
 
 jobs:
   release:
